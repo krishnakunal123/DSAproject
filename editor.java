@@ -190,7 +190,7 @@ class editor extends JFrame implements ActionListener {
 		}
 	}
 
-	// Main class
+	
 	public static void main(String args[])
 	{
 		editor e = new editor();
