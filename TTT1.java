@@ -34,21 +34,16 @@ reset.setBounds(100,350,100,50);
 add(reset);  
 reset.addActionListener(this);  
   
-}//eof showButton  
-  
-/*********************************************************/  
+}
 public  void check(int num1){  
 for(ii=0;ii<=7;ii++){  
    for(jj=1;jj<=3;jj++){  
         if(a[ii][jj]==num1){ a[ii][4]=11;  }  
   
-   }//eof for jj  
+   }
   
-}//eof for ii  
-}//eof check  
-/**********************************************************/  
-  
-/*********************************************************/  
+}
+} 
   
 public void complogic(int num){  
   
@@ -91,13 +86,10 @@ public void complogic(int num){
  }//eof for 1  
   
   
-}//eof complogic  
-  
-  
-/*********************************************************/  
+}
   
 TTT1(){  
-super("tic tac toe by ashwani");  
+super("tic tac toe");  
   
 CheckboxGroup cbg=new CheckboxGroup();  
 c1=new Checkbox("vs computer",cbg,false);  
@@ -119,9 +111,7 @@ setLayout(null);
 setSize(330,450);  
 setVisible(true);  
 setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  
-}//eof constructor  
-  
-/*************************************************************/  
+}
 public void itemStateChanged(ItemEvent e){  
  if(c1.getState())  
   {   
@@ -134,11 +124,10 @@ public void itemStateChanged(ItemEvent e){
 remove(c1);remove(c2);  
  repaint(0,0,330,450);  
  showButton();  
-}//eof itemstate  
-/************************************************************/  
+}
   
 public void actionPerformed(ActionEvent e){  
-/********************************/  
+
 if(type==true)//logicfriend  
 {  
 if(e.getSource()==reset){  
@@ -209,10 +198,9 @@ for(i=0;i<=7;i++){
     }    
   
   
-}//eof actionperformed  
-/************************************************************/  
+}
   
 public static void main(String []args){  
 new TTT1();  
-}//eof main  
-}//eof class  
+}
+}  
